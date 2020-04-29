@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class MainEquals {
     public static void main(String[] args) {
-        int[] a = {2, 2, 4};
+        int[] a = {3, 2, 4};
         int[] b = {2, 2, 4};
         System.out.print(Arrays.toString(a) + " " + Arrays.toString(b) + " равны: " + equals(a,b) );
     }
@@ -14,7 +14,7 @@ public class MainEquals {
                 return false;
             }
 
-            for (int i = 0; (i < a.length) && (i < a.length); i++) {
+            for (int i = 0; (i < a.length) && (i < b.length); i++) {
                 if (a[i] != b[i]) {
                     return false;
                 }
