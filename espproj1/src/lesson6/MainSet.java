@@ -20,7 +20,7 @@ public class MainSet {
             int candidate = a[i];
             System.out.println("candidate = " + candidate);
 
-            boolean contains = (result, resultLenght, candidate);  // кандидат содержится в результате
+            boolean contains = contains(result, resultLenght, candidate);  // кандидат содержится в результате
             System.out.println("result = " + Arrays.toString(result));
             System.out.println( "result containt candidate = " + contains);
 

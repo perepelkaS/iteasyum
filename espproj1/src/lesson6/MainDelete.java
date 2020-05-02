@@ -5,18 +5,18 @@ import java.util.Arrays;
 public class MainDelete {
     public static void main(String[] args) {
         int [] a = {1, 2, 3, 4, 5};
-        int usedLenght = deleteElement(a, 2, a.length);
+        int usedLenght = deleteElement(a,2, a.length);
         print(a, usedLenght);
-        usedLenght = deleteElement(a, 2,usedLenght);
+      usedLenght = deleteElement(a, 2, usedLenght);
         print(a, usedLenght);
-        usedLenght = deleteElement(a, 2,usedLenght);
+        usedLenght = deleteElement(a, 2, usedLenght);
         print(a, usedLenght);
     }
 
     static void print (int[] a, int usedLenght) {
         System.out.print("a = [");
         for (int i = 0; i < usedLenght; i++) {
-            System.out.print(" " + a[i]);
+            System.out.print("" + a[i]);
         }
         System.out.println("]");
     }
