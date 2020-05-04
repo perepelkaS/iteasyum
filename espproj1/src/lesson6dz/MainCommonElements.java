@@ -55,3 +55,11 @@ public class MainCommonElements {
     }
 
 }
+
+//int a = (a.length < b.length) ? a.length : b length;
+//Тоже самое что и:
+//if ( a.length < b.length) {
+//a = a.length;
+//} else {
+//a = b.length;
+//}
