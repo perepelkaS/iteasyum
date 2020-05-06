@@ -17,7 +17,7 @@ public class MainSeaBattle {
         int[] point = {4, 4};
     // длина
         int length = random.nextInt(4) + 1;
-        // флаг
+    // флаг
 
 
 
