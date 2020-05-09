@@ -89,7 +89,7 @@ public class MainTour {
     }
 
     private static void deleteCode(Tour[] tours, Tour searchCode) {
-        Tour[] result = new Tour[tours.length];
+
         int l = 1;
         for (int i = 0; i < tours.length; i++) {
             if (tours[i] == null) {
@@ -98,15 +98,18 @@ public class MainTour {
             boolean d = tours[i].code.equals(searchCode.code);
             if (d == true) {
                 for ( int j = 0; j < i; j++) {
-                    result[j] = tours[i - l];
+                    tours[j] = tours[i - l];
                     l++;
                 }
                 for ( int j = i + 1; j < tours.length; j++) {
-                    result[j - 1] = tours[i + 1];
+                    tours[j - 1] = tours[i + 1];
                     i++;
                 }
+
+                System.out.println("==================================");
+                System.out.println("Удаление прошло успешно");
+                System.out.println("==================================");
             }
-            printTours(result);
         }
     }
 
@@ -165,6 +168,8 @@ public class MainTour {
 
         System.out.print(" стоимость тура > ");
         tour.cost = scanner.nextInt();
+
+        System.out.println("asdasd = " + tour);
 
         return tour;
     }
