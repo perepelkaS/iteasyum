@@ -1,5 +1,7 @@
 package lesson7dz;
 
+import java.util.Arrays;
+
 public class MainHM1 {
     public static void main(String[] args) {
         int[][] a = {
