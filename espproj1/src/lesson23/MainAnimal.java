@@ -2,7 +2,7 @@ package lesson23;
 
 public class MainAnimal {
     public static void main(String[] args) {
-        AnimalCard[] cards = {new DogCard(), new CatCard(), new RavenCard(), new GooseCard()};
+        AnimalCard[] cards = {new DogCard(), new CatCard(), new RavenCard(), new GooseCard(), new CrocoCard()};
         printCards(cards);
         }
 
@@ -15,6 +15,9 @@ public class MainAnimal {
                 }
                 if (card instanceof FlyableCharact) {
                     System.out.println("vv");
+                }
+                if (card instanceof FloatingCharact) {
+                    System.out.println("~~");
                 }
         }
     }
