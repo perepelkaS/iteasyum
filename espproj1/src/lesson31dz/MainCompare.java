@@ -6,7 +6,7 @@ public class MainCompare {
     public static void main(String[] args) {
         Tour a = new Tour("code1", "Anapa", "Rus");
         Tour b = new Tour("code2", "Cuba", "Cuba");
-        System.out.println(a.compareTo(b));
+        //System.out.println(a.compareTo(b));
 
         Comparator<Tour> countryComparator = new Comparator<Tour>() {
             @Override
